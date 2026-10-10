@@ -19,7 +19,9 @@ Transparencia hacia el consumidor, contratación online, suscripciones, devoluci
   - [2.2 COM-06: Eliminar patrones oscuros](#22-com-06-eliminar-patrones-oscuros)
   - [2.3 COM-07: Eliminar reseñas falsas](#23-com-07-eliminar-reseñas-falsas)
   - [2.4 COM-08: Eliminar afirmaciones sin fundamento](#24-com-08-eliminar-afirmaciones-sin-fundamento)
-- [3. Posibles lagunas](#3-posibles-lagunas)
+- [3. Garantías y resolución de conflictos](#3-garantías-y-resolución-de-conflictos)
+  - [3.1 COM-09: Resolución de litigios (ADR) y retirada del enlace a la plataforma ODR](#31-com-09-resolución-de-litigios-adr-y-retirada-del-enlace-a-la-plataforma-odr)
+  - [3.2 COM-10: Contenido y servicios digitales: conformidad y actualizaciones](#32-com-10-contenido-y-servicios-digitales-conformidad-y-actualizaciones)
 <!-- /INDICE -->
 
 ## 1. Identificación y contratación
@@ -97,7 +99,7 @@ Transparencia hacia el consumidor, contratación online, suscripciones, devoluci
 
 | Región | Regla |
 |---|---|
-| UE/ES | Art. 8.2 Directiva 2011/83 · art. 98 TRLGDCU. Información de duración y renovación como parte de la información precontractual. Además, la Ley 10/2025 de servicios de atención a la clientela regula los canales de atención (incluida la baja) de las empresas que entran en su ámbito. |
+| UE/ES | Art. 8.2 Directiva 2011/83 · art. 98 TRLGDCU. Información de duración y renovación como parte de la información precontractual. Además, la Ley 10/2025 de servicios de atención a la clientela regula los canales de atención (incluida la baja), pero solo para empresas de servicios básicos de interés general (suministros, transporte de viajeros, postales, comunicaciones electrónicas, financieros) y para grandes empresas (250 o más trabajadores, 50 M€ de facturación o 43 M€ de balance). No aplica a un comercio o servicio pequeño. |
 | EE. UU. | ROSCA (FTC): divulgar las condiciones esenciales antes de recoger los datos de pago, obtener consentimiento expreso e informado y ofrecer cancelación sencilla. La regla «Click-to-Cancel» de la FTC fue **anulada** por el Octavo Circuito (8-7-2025); la FTC reabrió el proceso con un aviso previo (marzo de 2026). ROSCA y las leyes estatales de renovación automática siguen vigentes. |
 | Reino Unido | La DMCCA 2024 prevé un régimen específico de contratos de suscripción; el Gobierno anunció su entrada en vigor para **enero de 2027** (verifica la fecha). |
 | LATAM | Reglas generales de consumo de cada país. |
@@ -231,6 +233,7 @@ Transparencia hacia el consumidor, contratación online, suscripciones, devoluci
 - Matizar los límites («resultados individuales pueden variar») sin contradecir el titular.
 - Revisar con cuidado afirmaciones de **salud, rendimiento, seguridad, ahorro y medioambientales**.
 - No usar sellos o etiquetas que no correspondan a un sistema de certificación reconocido.
+- **Identificar la publicidad como tal** (contenido patrocinado, enlaces de afiliado, colaboraciones con creadores): las comunicaciones comerciales deben ser claramente identificables (art. 20 LSSI). El código de conducta sectorial de influencers es un complemento y su aplicación depende de la adhesión; los usuarios «de especial relevancia» tienen además obligaciones propias (verifica el alcance en el Real Decreto 444/2024).
 
 **Novedad: afirmaciones medioambientales.** La Directiva (UE) 2024/825 se aplica desde el **27 de septiembre de 2026**: prohíbe, entre otras, las afirmaciones medioambientales **genéricas** («ecológico», «sostenible», «respetuoso con el medio ambiente») sin poder demostrar un comportamiento ambiental excelente reconocido, y los sellos de sostenibilidad que no se basen en un sistema de certificación. Comprueba la transposición nacional.
 
@@ -241,13 +244,50 @@ Transparencia hacia el consumidor, contratación online, suscripciones, devoluci
 - [Bird & Bird: Directiva de empoderamiento de los consumidores](https://twobirds.com/en/insights/2024/global/directive-to-empower-consumers-for-the-green-transition-has-been-adopted)
 - [Directiva (UE) 2024/825](https://eur-lex.europa.eu/eli/dir/2024/825/oj)
 
-## 3. Posibles lagunas
+## 3. Garantías y resolución de conflictos
 
-Medidas relevantes que **no estaban en tus listas** y no se han desarrollado:
+### 3.1 COM-09: Resolución de litigios (ADR) y retirada del enlace a la plataforma ODR
 
-- Información sobre resolución alternativa de litigios y servicio de atención a la clientela (Ley 10/2025, con adaptación hasta el 28-12-2026 para las empresas incluidas).
-- Obligaciones del DSA para mercados y plataformas (trazabilidad de comerciantes, transparencia publicitaria).
-- Garantías legales y obligaciones de información sobre producto digital (Directiva 2019/770).
-- Facturación electrónica y obligaciones fiscales de comercio electrónico (IVA, OSS).
-- Publicidad de influencers y comunicaciones comerciales identificadas.
-- Normas sectoriales (sorteos, juegos, salud, finanzas).
+- **Prioridad:** Media
+- **Naturaleza:** Obligación legal condicionada
+- **Sectores:** INF ○ · TIE ● · SUS ● · UGC ◐ · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ○ · UK ◐ · LATAM ○
+- **Verificación:** ➕ Añadida
+
+**De qué trata.** Informar al consumidor de los mecanismos de resolución alternativa de litigios (ADR) que realmente correspondan a tu negocio y **eliminar las referencias a la plataforma europea ODR**, que dejó de prestar servicios el **20 de julio de 2025** (Reglamento (UE) 2024/3228).
+
+**Qué hacer**
+
+- Buscar y retirar el enlace y el texto sobre la plataforma ODR en el aviso legal, los términos, los correos de confirmación y los pies de página. Las plantillas antiguas aún lo incluyen.
+- Si estás adherido a un organismo de ADR (Junta Arbitral de Consumo, sistema sectorial) o la ley te obliga a participar, informar de su nombre y de cómo acceder a él.
+- Mantener un canal propio de reclamaciones y responder en plazo.
+- Revisar las remisiones a Centros Europeos del Consumidor y a organismos ADR notificados si vendes en otros países de la UE.
+
+**Fuentes**
+
+- [Ministerio de Consumo (Centro Europeo del Consumidor): fin de la plataforma ODR](https://portal-cec.consumo.gob.es/es/comunicacion/noticias/2025/la-plataforma-europea-para-la-resolucion-de-litigios-en-linea-dejara-de)
+- [Reglamento (UE) 2024/3228](https://eur-lex.europa.eu/eli/reg/2024/3228/oj)
+
+### 3.2 COM-10: Contenido y servicios digitales: conformidad y actualizaciones
+
+- **Prioridad:** Alta (si suministras contenido o servicios digitales a consumidores)
+- **Naturaleza:** Obligación legal
+- **Sectores:** INF ○ · TIE ◐ · SUS ● · UGC ◐ · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ○ · UK ● · LATAM ◐
+- **Verificación:** ➕ Añadida
+
+**De qué trata.** La Directiva (UE) 2019/770 regula los contratos de suministro de contenidos y servicios digitales (software, apps, SaaS, streaming, descargas). En España se incorporó al TRLGDCU mediante el Real Decreto-ley 7/2021 (en vigor desde el 1-1-2022).
+
+**Qué hacer**
+
+- **Conformidad:** el servicio debe corresponder a lo ofrecido (requisitos subjetivos: descripción, funcionalidades, compatibilidad) y a lo razonablemente esperable (requisitos objetivos).
+- **Actualizaciones:** suministrar las actualizaciones necesarias para mantener la conformidad, incluidas las de seguridad, durante el periodo que el consumidor pueda razonablemente esperar (art. 8.2 de la Directiva) e informar de ellas.
+- **Remedios:** poner en conformidad (reparación o sustitución) y, si no es posible o efectivo, reducir el precio o resolver el contrato, con reembolso en un máximo de 14 días desde que conoces la decisión.
+- **Plazos (España, según fuentes secundarias):** dos años para suministros únicos; durante todo el periodo del contrato en suministro continuo; presunción de que la falta existía al suministrarse durante un año (no apliques estas cifras sin comprobarlas en el TRLGDCU).
+- **Modificaciones:** solo si el contrato lo prevé con motivo válido, sin coste adicional y con aviso previo; si afectan negativamente, el usuario puede resolver.
+- Reflejar todo esto en los términos ([COM-02](03-consumo-y-comercio.md#12-com-02-términos-y-condiciones-del-servicio)) y relacionarlo con el desistimiento de contenido digital ([COM-04](03-consumo-y-comercio.md#14-com-04-política-de-reembolsos-y-desistimiento)).
+
+**Fuentes**
+
+- [Directiva (UE) 2019/770](https://eur-lex.europa.eu/eli/dir/2019/770/oj)
+- [Cuatrecasas: modificaciones en la legislación de consumidores](https://www.cuatrecasas.com/es/spain/propiedad-intelectual/art/modificaciones-relevantes-legislacion-consumidores-transposicion-directivas-compraventa-bienes-suministro-contenidos-servicios-d)

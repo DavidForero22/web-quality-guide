@@ -9,6 +9,7 @@ Cubre el marco legal de accesibilidad y los **55 criterios de WCAG 2.2 niveles A
 
 - [1. Marco legal](#1-marco-legal)
   - [1.1 ACC-01: Obligaciones legales de accesibilidad](#11-acc-01-obligaciones-legales-de-accesibilidad)
+  - [1.2 ACC-02: Declaración de accesibilidad y canal para comunicar barreras](#12-acc-02-declaración-de-accesibilidad-y-canal-para-comunicar-barreras)
 - [2. Principio 1: Perceptible](#2-principio-1-perceptible)
   - [2.1 WCAG 1.1.1: Contenido no textual (A)](#21-wcag-111-contenido-no-textual-a)
   - [2.2 WCAG 1.2.1: Solo audio y solo vídeo, pregrabado (A)](#22-wcag-121-solo-audio-y-solo-vídeo-pregrabado-a)
@@ -68,8 +69,9 @@ Cubre el marco legal de accesibilidad y los **55 criterios de WCAG 2.2 niveles A
 - [5. Principio 4: Robusto](#5-principio-4-robusto)
   - [5.1 WCAG 4.1.2: Nombre, función, valor (A)](#51-wcag-412-nombre-función-valor-a)
   - [5.2 WCAG 4.1.3: Mensajes de estado (AA)](#52-wcag-413-mensajes-de-estado-aa)
-- [6. Cómo comprobar la conformidad](#6-cómo-comprobar-la-conformidad)
-- [7. Posibles lagunas](#7-posibles-lagunas)
+- [6. Documentos y contenido de terceros](#6-documentos-y-contenido-de-terceros)
+  - [6.1 ACC-03: Documentos descargables y contenido de terceros](#61-acc-03-documentos-descargables-y-contenido-de-terceros)
+- [7. Cómo comprobar la conformidad](#7-cómo-comprobar-la-conformidad)
 <!-- /INDICE -->
 
 ## 1. Marco legal
@@ -113,6 +115,29 @@ Cubre el marco legal de accesibilidad y los **55 criterios de WCAG 2.2 niveles A
 - [Fieldfisher: claves de la transposición española](https://www.fieldfisher.com/es-es/locations/espana/actualidad/accesibilidad-obligatoria-claves-de-la-transposicion-accesibility-act)
 - [Deque: EN 301 549 v4.1.1 publicada](https://www.deque.com/blog/en-301-549-v4-1-1-is-final-what-changed-what-it-means-and-what-you-should-do/)
 - [Mondaq: el DOJ retrasa los plazos de ADA Título II](https://www.mondaq.com/unitedstates/media-entertainment-law/1782220/doj-extends-ada-title-ii-digital-accessibility-deadlines-by-one-year)
+
+### 1.2 ACC-02: Declaración de accesibilidad y canal para comunicar barreras
+
+- **Prioridad:** Media (Alta si eres sector público)
+- **Naturaleza:** Obligación legal condicionada
+- **Sectores:** INF ◐ · TIE ◐ · SUS ◐ · UGC ○ · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ◐ · UK ◐ · LATAM ○
+- **Verificación:** ➕ Añadida
+
+**De qué trata.** Publicar un documento que explique el grado de conformidad del sitio, los contenidos que aún no son accesibles y cómo contactar para comunicar una barrera. Es obligatorio para el sector público; **no es una obligación universal** para cualquier web privada.
+
+**Qué hacer**
+
+- **Sector público (UE/España):** publicar la declaración con el modelo europeo (Decisión de Ejecución (UE) 2018/1523), accesible desde todas las páginas con un enlace «Accesibilidad» y actualizada al menos una vez al año (RD 1112/2018).
+- **Sector privado:** los prestadores de servicios cubiertos por la Ley Europea de Accesibilidad deben informar de cómo el servicio cumple los requisitos de accesibilidad. En España hay normas complementarias para ciertas empresas de «especial trascendencia económica» (RD 193/2023). Comprueba el texto aplicable a tu caso en el BOE.
+- Aunque no sea obligatoria, es una buena práctica: describe el estándar usado (WCAG 2.2 AA), el estado de conformidad, las limitaciones conocidas y la fecha de la última revisión.
+- Ofrecer un **canal** (correo o formulario accesible) para comunicar barreras y comprometerse a un plazo de respuesta; un canal que nadie atiende no cuenta.
+
+**Fuentes**
+
+- [Directiva (UE) 2016/2102](https://eur-lex.europa.eu/eli/dir/2016/2102/oj)
+- [Decisión de Ejecución (UE) 2018/1523](https://eur-lex.europa.eu/eli/dec_impl/2018/1523/oj)
+- [Nota técnica del Observatorio de Accesibilidad sobre el RD 1112/2018](https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:26caea26-c01c-45f6-ba6b-c23c8918cf8e/2019-02-Nota-tecnica-OBSAE-rd1112-2018-accesibilidad-web.pdf)
 
 ## 2. Principio 1: Perceptible
 
@@ -470,18 +495,37 @@ Anuncia los cambios de estado mediante regiones vivas (`role="status"`, `aria-li
 
 > Nota: WCAG 2.2 eliminó el criterio 4.1.1 (*Parsing*), por lo que ya no forma parte de A/AA.
 
-## 6. Cómo comprobar la conformidad
+## 6. Documentos y contenido de terceros
+
+### 6.1 ACC-03: Documentos descargables y contenido de terceros
+
+- **Prioridad:** Media
+- **Naturaleza:** Obligación legal condicionada
+- **Sectores:** INF ● · TIE ◐ · SUS ◐ · UGC ◐ · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ◐ · UK ◐ · LATAM ◐
+- **Verificación:** ➕ Añadida
+
+**De qué trata.** La accesibilidad no termina en el HTML: los PDF, documentos de ofimática y el contenido que integras de terceros (vídeo, chat, mapas, reservas, pasarelas de pago, el propio banner de cookies) forman parte del servicio que el usuario experimenta.
+
+**Qué hacer**
+
+- **Documentos:** priorizar HTML para la información esencial. Cuando haya PDF, etiquetarlo (estructura, orden de lectura, encabezados, texto alternativo, idioma, tablas y formularios) y ofrecer una alternativa equivalente si no puede ser accesible.
+- **Terceros:** antes de integrar un servicio, pedir su informe de conformidad con la accesibilidad y probarlo con teclado y lector de pantalla; incluirlo en tus pruebas periódicas.
+- Si no es posible integrar una versión accesible, ofrecer un canal alternativo equivalente (formulario, correo, teléfono).
+- Controlar qué publicas: los avisos, formularios y documentos subidos por tu equipo deben cumplir los mismos criterios que el resto del sitio.
+
+**Matiz.** La Directiva 2016/2102 excluye en el sector público cierto contenido de terceros que el organismo no financia, desarrolla ni controla; no asumas esa exención para un servicio privado donde tú eliges e integras el componente.
+
+**Fuentes**
+
+- [WCAG 2.2 (W3C)](https://www.w3.org/TR/WCAG22/)
+- [Directiva (UE) 2016/2102](https://eur-lex.europa.eu/eli/dir/2016/2102/oj)
+
+## 7. Cómo comprobar la conformidad
 
 - **Automático** (axe, Lighthouse, WAVE): detecta una parte de los problemas (contraste, `alt` ausente, etiquetas) pero no sustituye a la revisión manual.
 - **Manual con teclado:** recorre todo el sitio con `Tab` y comprueba foco visible, orden, trampas y atajos.
 - **Lector de pantalla** (NVDA, VoiceOver) y **zoom al 200 %/400 %** en las plantillas clave.
-- **Formularios y flujos críticos:** ver [POST-01](07-post-lanzamiento.md#11-post-01-testear-formularios).
-
-## 7. Posibles lagunas
-
-Medidas relevantes que **no estaban en tus listas** y no se han desarrollado:
-
-- Declaración de accesibilidad publicada y canal de comunicación de barreras (obligatoria para sector público).
-- Pruebas con usuarios reales de tecnologías de apoyo.
-- Accesibilidad de documentos descargables (PDF) y de contenidos de terceros embebidos.
-- Criterios AAA seleccionados que suelen ser asumibles (p. ej., 2.4.13 Apariencia del foco).
+- **Pruebas con personas usuarias de tecnologías de apoyo** (lector de pantalla, ampliadores, control por voz, teclados alternativos): no son una obligación legal específica, pero son la forma más eficaz de encontrar los problemas que las pruebas automáticas no detectan.
+- **Formularios y flujos críticos:** ver [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios).
+- **Nivel AAA:** no es el mínimo legal. Algunos criterios, como 2.4.13 *Apariencia del foco* (AAA, con requisitos de tamaño y contraste del indicador), son una mejora razonable si el diseño lo permite.

@@ -30,7 +30,9 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 - [5. Comunicaciones comerciales](#5-comunicaciones-comerciales)
   - [5.1 PRIV-15: Autorización previa y enlace de baja en el correo comercial](#51-priv-15-autorización-previa-y-enlace-de-baja-en-el-correo-comercial)
   - [5.2 PRIV-16: Cumplimiento de CAN-SPAM y su multa por correo](#52-priv-16-cumplimiento-de-can-spam-y-su-multa-por-correo)
-- [6. Posibles lagunas](#6-posibles-lagunas)
+- [6. Responsabilidad proactiva y brechas](#6-responsabilidad-proactiva-y-brechas)
+  - [6.1 PRIV-17: Registro de tratamientos, EIPD y delegado de protección de datos](#61-priv-17-registro-de-tratamientos-eipd-y-delegado-de-protección-de-datos)
+  - [6.2 PRIV-18: Brechas de seguridad e incidentes](#62-priv-18-brechas-de-seguridad-e-incidentes)
 <!-- /INDICE -->
 
 ## 1. Alcance jurídico
@@ -219,12 +221,18 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 
 **Por región.** UE/UK: consentimiento previo. EE. UU.: modelo de *opt-out* con enlace «No vender ni compartir mi información personal» y respeto de la señal *Global Privacy Control* en California. LATAM: Brasil exige base legal (consentimiento) y la ANPD publicó una guía de cookies.
 
+**Muros de cookies («pago o consentimiento»).** Condicionar el acceso a aceptar cookies no es ilícito siempre, pero tampoco es válido automáticamente. La Guía de la AEPD lo admite si se informa al usuario, se ofrece una alternativa **genuinamente equivalente** que no use cookies no exentas y la ofrece el propio editor; no exige que esa alternativa sea gratuita. El dictamen 08/2024 del CEPD es más restrictivo para grandes plataformas con publicidad comportamental. Valora cada caso y documenta por qué ambas opciones son razonables.
+
+**Señal GPC y enlaces de exclusión (EE. UU.).** Si estás sujeto a la ley de privacidad de California (u otros estados con previsiones parecidas), debes tratar la señal *Global Privacy Control* del navegador como solicitud válida de exclusión de venta o compartición y ofrecer el enlace «Do Not Sell or Share My Personal Information» o «Your Privacy Choices» donde corresponda. No es una obligación general para una web dirigida solo a España.
+
 **En movimiento.** La propuesta «Digital Omnibus» de la UE pretende mover las reglas de cookies al RGPD (nuevos arts. 88a y 88b) y ampliar las excepciones; sigue en tramitación (2025/0360(COD)).
 
 **Fuentes**
 
 - [Cuatrecasas: nuevo criterio de la AEPD sobre cookies](https://www.cuatrecasas.com/es/spain/propiedad-intelectual/art/entra-vigor-nuevo-criterio-aepd-uso-de-cookies)
 - [Guía de cookies de la AEPD](https://www.aepd.es/documento/guia-cookies.pdf)
+- [Hogan Lovells: nueva guía de cookies en España (pago o consentimiento)](https://www.hoganlovells.com/es/publications/nueva-guia-sobre-el-uso-de-cookies-en-espana)
+- [Simmons & Simmons: dictamen 08/2024 del CEPD sobre «consentir o pagar»](https://www.simmons-simmons.com/en/publications/clvpeiyzw00s0ua8c0jyqml42/key-points-from-edpb-opinion-08-2024-on-consent-or-pay-models)
 - [Observatorio Legislativo: Digital Omnibus 2025/0360(COD)](https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0360(COD))
 
 ### 3.3 PRIV-08: Auditar SDKs y servicios de terceros
@@ -242,7 +250,7 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 - Crear un inventario: servicio, finalidad, datos que envía, momento de activación, país de tratamiento, base jurídica, contrato.
 - Contrato de encargado del tratamiento cuando el proveedor trate datos por tu cuenta (art. 28 RGPD).
 - Para transferencias fuera del EEE, comprobar la salvaguarda (decisión de adecuación, cláusulas contractuales tipo). El *EU-US Data Privacy Framework* está vigente, con un recurso pendiente ante el Tribunal de Justicia (C-703/25 P).
-- Repetir el escaneo en cada versión y al añadir un tag nuevo (ver [POST-02](07-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+- Repetir el escaneo en cada versión y al añadir un tag nuevo (ver [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
 
 **Fuentes**
 
@@ -268,7 +276,7 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 **Matices sobre la lista original**
 
 - **No está prohibido automáticamente.** Existe una sentencia concreta del *Landgericht* de Múnich I (20-1-2022, 3 O 17493/20) que concedió **100 €** de indemnización por daño inmaterial a un visitante cuya IP se había transmitido a Google sin justificación. Es una sentencia de **primera instancia, alemana**; no vincula a otros países ni constituye una multa automática. Su razonamiento fue que las fuentes podían servirse localmente.
-- Desde 2020 el navegador particiona la caché por sitio, de modo que el beneficio de «fuentes ya en caché de otro sitio» desapareció; alojarlas localmente suele ser igual de rápido.
+- Desde 2020 el navegador particiona la caché por sitio, así que la ventaja de «fuente ya en caché de otro sitio» desapareció. Alojarlas localmente solo mejora el rendimiento si además usas una CDN y HTTP/2: mídelo (ver [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros)).
 
 **Fuentes:** [IHK Bergische Region: LG München I, 3 O 17493/20](https://www.ihk.de/bergische/recht-und-steuern/wettbewerbsrecht/google-fonts-5646176)
 
@@ -415,6 +423,8 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 - Los mensajes estrictamente transaccionales (confirmación de pedido) no son comunicaciones comerciales, pero no los uses como vehículo de promoción.
 - Buena práctica de entregabilidad: cabecera `List-Unsubscribe` con baja en un clic para envíos masivos.
 
+**Otros canales.** Separa por canal y finalidad. El art. 21 LSSI cubre el correo y los medios electrónicos individuales equivalentes, incluidos los mensajes móviles (SMS y mensajería); las **llamadas** comerciales tienen reglas propias de telecomunicaciones. No extrapoles sin más el consentimiento obtenido para el correo a otros canales: recógelo, regístralo y respétalo por canal.
+
 **Por región.** UE/UK: consentimiento previo (con excepción para clientes). EE. UU.: modelo de exclusión, ver [PRIV-16](02-privacidad-cookies-y-comunicaciones.md#52-priv-16-cumplimiento-de-can-spam-y-su-multa-por-correo). Brasil: LGPD exige base legal y respeto a la oposición.
 
 **Fuentes:** [LSSI-CE, arts. 21 y 22 (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758)
@@ -448,14 +458,55 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 - [FTC: guía de cumplimiento de CAN-SPAM](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 - [16 CFR 1.98: importes de sanciones civiles ajustados por inflación](https://www.federal-regs.com/title/16/part-1/1.98/)
 
-## 6. Posibles lagunas
+## 6. Responsabilidad proactiva y brechas
 
-Medidas relevantes que **no estaban en tus listas** y no se han desarrollado:
+### 6.1 PRIV-17: Registro de tratamientos, EIPD y delegado de protección de datos
 
-- Registro de actividades de tratamiento y evaluación de impacto (EIPD) cuando proceda.
-- Protocolo de brechas de seguridad y notificación en 72 horas.
-- Seguridad técnica del tratamiento: HTTPS, cabeceras, cifrado, control de acceso.
-- Delegado de protección de datos: cuándo es obligatorio.
-- Modelos de «pago o consentimiento» (cookie wall) y criterios de la AEPD.
-- Respeto de la señal *Global Privacy Control* y enlace «Your Privacy Choices» en EE. UU.
-- Cumplimiento en canales distintos del correo: SMS, WhatsApp, llamadas.
+- **Prioridad:** Alta
+- **Naturaleza:** Obligación legal
+- **Sectores:** INF ◐ · TIE ● · SUS ● · UGC ● · MEN ●
+- **Regiones:** UE/ES ● · EE. UU. ○ · UK ● · LATAM ◐
+- **Verificación:** ➕ Añadida
+
+**De qué trata.** Tres piezas de la responsabilidad proactiva del RGPD que se suelen confundir: el **registro de actividades de tratamiento** (art. 30), la **evaluación de impacto** (EIPD, art. 35) y el **delegado de protección de datos** (DPD, art. 37). Ninguna se exige «por tener una web», pero sí por lo que haces con los datos.
+
+**Qué hacer**
+
+- **Registro (art. 30):** documentar por escrito cada actividad de tratamiento (finalidad, categorías de datos e interesados, destinatarios, transferencias, plazos, medidas de seguridad). La excepción para organizaciones de menos de 250 personas es **limitada**: no cubre tratamientos no ocasionales, de riesgo o de datos especiales; en la práctica, un negocio con clientes o suscriptores suele estar dentro.
+- **EIPD (art. 35):** hacerla *antes* de empezar un tratamiento que probablemente entrañe alto riesgo. Consulta las listas de la AEPD (tratamientos que la requieren y tratamientos exentos): ejemplos habituales son la elaboración de perfiles a gran escala, la monitorización sistemática, el tratamiento a gran escala de datos de menores o la biometría. En caso de duda, hacerla es buena práctica.
+- **DPD (art. 37):** obligatorio para organismos públicos, para quien tenga como actividad principal la observación habitual y sistemática a gran escala, o el tratamiento a gran escala de datos especiales. La LOPDGDD (art. 34) añade entidades concretas (centros docentes, aseguradoras, entidades financieras, centros sanitarios, entre otras). Si lo nombras voluntariamente, asumes sus obligaciones y debes comunicarlo a la AEPD.
+- Mantenerlo vivo: actualizar el registro al cambiar herramientas o finalidades (ver [PRIV-08](02-privacidad-cookies-y-comunicaciones.md#33-priv-08-auditar-sdks-y-servicios-de-terceros)).
+
+**En movimiento.** El paquete «Digital Omnibus» propone modificar la excepción del art. 30.5 (elevar el umbral de 250 a 750 personas, salvo alto riesgo); a fecha de esta guía no está aprobado.
+
+**Fuentes**
+
+- [RGPD arts. 30, 35 y 37 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- [AEPD: listas de tratamientos que requieren EIPD (art. 35.4)](https://www.aepd.es/documento/listas-dpia-es-35-4.pdf)
+- [LOPDGDD (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673)
+
+### 6.2 PRIV-18: Brechas de seguridad e incidentes
+
+- **Prioridad:** Alta
+- **Naturaleza:** Obligación legal
+- **Sectores:** INF ◐ · TIE ● · SUS ● · UGC ● · MEN ●
+- **Regiones:** UE/ES ● · EE. UU. ● · UK ● · LATAM ●
+- **Verificación:** ➕ Añadida
+
+**De qué trata.** Un proceso para detectar, evaluar, contener y comunicar incidentes que afecten a datos personales (pérdida, destrucción, alteración, acceso o comunicación no autorizados; incluye la indisponibilidad, por ejemplo un *ransomware*). Fusiona los puntos «brechas» y «plan de respuesta a incidentes».
+
+**Qué hacer**
+
+- Definir responsables, canal interno de aviso y pasos de contención antes de que ocurra.
+- **Documentar toda brecha**, se notifique o no (art. 33.5 RGPD).
+- **Notificar a la autoridad** sin dilación indebida y, de ser posible, en un máximo de **72 horas** desde que tengas conocimiento, **salvo** que sea improbable que suponga un riesgo para las personas. No toda incidencia debe notificarse. En España, a través de la herramienta *Comunica-Brecha RGPD* de la AEPD.
+- **Comunicar a los afectados** cuando el riesgo sea **alto** (art. 34), con lenguaje claro y recomendaciones de protección.
+- Exigir en los contratos que tus proveedores te avisen sin demora (art. 33.2).
+- Ensayar el plan al menos una vez al año ([POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+
+**Por región.** EE. UU.: todos los estados tienen leyes de notificación de brechas, con definiciones y plazos distintos. Reino Unido: igual que la UE (UK GDPR). Brasil: la LGPD exige comunicar incidentes relevantes a la autoridad y a los titulares.
+
+**Fuentes**
+
+- [RGPD arts. 33 y 34 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- [ISMS Forum: guía práctica de brechas de datos (2022)](https://www.ismsforum.es/ficheros/descargas/guiabrechasdatos2022v411663223489.pdf)
