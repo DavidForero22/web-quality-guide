@@ -98,6 +98,8 @@ Todas las medidas excepto los criterios WCAG (ver la sección siguiente).
 | [SEO-09](05-seo.md#34-seo-09-datos-estructurados): Datos estructurados | Media | Buena práctica | ◐ | ● | ◐ | ◐ | ◐ | ● | ● | ● | ● |
 | [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región | Media | Buena práctica | ◐ | ◐ | ◐ | ◐ | ◐ | ● | ● | ● | ● |
 | [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información | Media | Buena práctica | ● | ● | ◐ | ● | ◐ | ● | ● | ● | ● |
+| [SEO-12](05-seo.md#41-seo-12-favicon): Favicon | Media | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir | Media | Buena práctica | ● | ● | ◐ | ● | ◐ | ● | ● | ● | ● |
 | [REN-01](06-rendimiento.md#11-ren-01-medir-con-pagespeed-insights): Medir con PageSpeed Insights | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
 | [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Revisar Core Web Vitals | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
 | [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): Comprimir imágenes y usar formatos modernos | Alta | Buena práctica | ● | ● | ◐ | ● | ● | ● | ● | ● | ● |
@@ -105,14 +107,20 @@ Todas las medidas excepto los criterios WCAG (ver la sección siguiente).
 | [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros | Media | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
 | [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales | Media | Buena práctica | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
 | [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado | Media | Buena práctica | ◐ | ◐ | ◐ | ◐ | ◐ | ● | ● | ● | ● |
-| [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad | Alta | Obligación legal condicionada | ● | ● | ● | ● | ● | ● | ◐ | ● | ● |
-| [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
-| [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
-| [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada | Alta | Buena práctica | ◐ | ● | ● | ● | ● | ● | ● | ● | ● |
-| [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros | Media | Buena práctica | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
-| [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
-| [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
-| [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido | Media | Buena práctica | ● | ● | ◐ | ● | ◐ | ● | ● | ● | ● |
+| [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos | Alta | Buena práctica | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
+| [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1 | Alta | Buena práctica | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
+| [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones | Media | Buena práctica | ◐ | ● | ● | ◐ | ◐ | ● | ● | ● | ● |
+| [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens | Media | Buena práctica | ◐ | ● | ● | ◐ | ◐ | ● | ● | ● | ● |
+| [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso | Baja | Buena práctica | ◐ | ◐ | ● | ◐ | ◐ | ● | ● | ● | ● |
+| [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión | Media | Buena práctica | ◐ | ● | ● | ◐ | ◐ | ● | ● | ● | ● |
+| [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad | Alta | Obligación legal condicionada | ● | ● | ● | ● | ● | ● | ◐ | ● | ● |
+| [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada | Alta | Buena práctica | ◐ | ● | ● | ● | ● | ● | ● | ● | ● |
+| [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros | Media | Buena práctica | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
+| [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas | Alta | Buena práctica | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido | Media | Buena práctica | ● | ● | ◐ | ● | ◐ | ● | ● | ● | ● |
 
 ## 3. Criterios WCAG 2.2 A y AA
 
@@ -144,11 +152,11 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Revisar Core Web Vitals
   - [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): Comprimir imágenes y usar formatos modernos
   - [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión): Caché HTTP, CDN y compresión
-  - [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
-  - [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
-  - [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
-  - [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
-  - [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
+  - [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
+  - [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
+  - [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
+  - [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
+  - [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
 - **Prioridad Media**
   - [ACC-03](01-accesibilidad.md#61-acc-03-documentos-descargables-y-contenido-de-terceros): Documentos descargables y contenido de terceros
   - [PRIV-09](02-privacidad-cookies-y-comunicaciones.md#34-priv-09-cargar-las-fuentes-de-google-desde-tu-propio-servidor): Cargar las fuentes de Google desde tu propio servidor
@@ -156,8 +164,10 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [SEO-03](05-seo.md#13-seo-03-generar-sitemapxml): Generar sitemap.xml
   - [SEO-06](05-seo.md#31-seo-06-canónicas-y-contenido-duplicado): Canónicas y contenido duplicado
   - [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información
+  - [SEO-12](05-seo.md#41-seo-12-favicon): Favicon
+  - [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir
   - [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros
-  - [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
+  - [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
 
 **Según condiciones (◐)**
 
@@ -184,8 +194,14 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
 - [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región
 - [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales
 - [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado
-- [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
-- [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
+- [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos
+- [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1
+- [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones
+- [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens
+- [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso
+- [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión
+- [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
+- [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
 
 ### 4.2 Tienda online (`TIE`)
 
@@ -221,12 +237,14 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Revisar Core Web Vitals
   - [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): Comprimir imágenes y usar formatos modernos
   - [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión): Caché HTTP, CDN y compresión
-  - [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
-  - [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
-  - [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
-  - [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
-  - [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
-  - [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
+  - [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos
+  - [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1
+  - [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
+  - [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
+  - [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
+  - [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
+  - [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
+  - [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
 - **Prioridad Media**
   - [PRIV-09](02-privacidad-cookies-y-comunicaciones.md#34-priv-09-cargar-las-fuentes-de-google-desde-tu-propio-servidor): Cargar las fuentes de Google desde tu propio servidor
   - [PRIV-16](02-privacidad-cookies-y-comunicaciones.md#52-priv-16-cumplimiento-de-can-spam-y-su-multa-por-correo): Cumplimiento de CAN-SPAM y su multa por correo
@@ -237,10 +255,15 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [SEO-06](05-seo.md#31-seo-06-canónicas-y-contenido-duplicado): Canónicas y contenido duplicado
   - [SEO-09](05-seo.md#34-seo-09-datos-estructurados): Datos estructurados
   - [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información
+  - [SEO-12](05-seo.md#41-seo-12-favicon): Favicon
+  - [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir
   - [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros
   - [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales
-  - [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
-  - [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
+  - [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones
+  - [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens
+  - [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión
+  - [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
+  - [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
 
 **Según condiciones (◐)**
 
@@ -256,6 +279,7 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
 - [PI-04](04-propiedad-intelectual-y-contenido.md#22-pi-04-derechos-de-imagen-de-las-personas): Derechos de imagen de las personas
 - [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región
 - [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado
+- [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso
 
 ### 4.3 Suscripción o SaaS (`SUS`)
 
@@ -287,19 +311,27 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [REN-01](06-rendimiento.md#11-ren-01-medir-con-pagespeed-insights): Medir con PageSpeed Insights
   - [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Revisar Core Web Vitals
   - [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión): Caché HTTP, CDN y compresión
-  - [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
-  - [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
-  - [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
-  - [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
-  - [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
-  - [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
+  - [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos
+  - [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1
+  - [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
+  - [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
+  - [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
+  - [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
+  - [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
+  - [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
 - **Prioridad Media**
   - [PRIV-09](02-privacidad-cookies-y-comunicaciones.md#34-priv-09-cargar-las-fuentes-de-google-desde-tu-propio-servidor): Cargar las fuentes de Google desde tu propio servidor
   - [PRIV-16](02-privacidad-cookies-y-comunicaciones.md#52-priv-16-cumplimiento-de-can-spam-y-su-multa-por-correo): Cumplimiento de CAN-SPAM y su multa por correo
   - [COM-09](03-consumo-y-comercio.md#31-com-09-resolución-de-litigios-adr-y-retirada-del-enlace-a-la-plataforma-odr): Resolución de litigios (ADR) y retirada del enlace a la plataforma ODR
+  - [SEO-12](05-seo.md#41-seo-12-favicon): Favicon
   - [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros
   - [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales
-  - [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
+  - [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones
+  - [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens
+  - [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión
+  - [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
+- **Prioridad Baja**
+  - [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso
 
 **Según condiciones (◐)**
 
@@ -323,9 +355,10 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
 - [SEO-09](05-seo.md#34-seo-09-datos-estructurados): Datos estructurados
 - [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región
 - [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información
+- [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir
 - [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): Comprimir imágenes y usar formatos modernos
 - [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado
-- [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
+- [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
 
 ### 4.4 Contenido de usuarios (`UGC`)
 
@@ -357,12 +390,14 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Revisar Core Web Vitals
   - [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): Comprimir imágenes y usar formatos modernos
   - [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión): Caché HTTP, CDN y compresión
-  - [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
-  - [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
-  - [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
-  - [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
-  - [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
-  - [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
+  - [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos
+  - [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1
+  - [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
+  - [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
+  - [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
+  - [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
+  - [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
+  - [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
 - **Prioridad Media**
   - [PRIV-09](02-privacidad-cookies-y-comunicaciones.md#34-priv-09-cargar-las-fuentes-de-google-desde-tu-propio-servidor): Cargar las fuentes de Google desde tu propio servidor
   - [PRIV-13](02-privacidad-cookies-y-comunicaciones.md#41-priv-13-no-pedir-la-edad-a-los-usuarios): No pedir la edad a los usuarios
@@ -372,10 +407,12 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [SEO-04](05-seo.md#14-seo-04-generar-robotstxt): Generar robots.txt
   - [SEO-06](05-seo.md#31-seo-06-canónicas-y-contenido-duplicado): Canónicas y contenido duplicado
   - [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información
+  - [SEO-12](05-seo.md#41-seo-12-favicon): Favicon
+  - [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir
   - [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros
   - [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales
-  - [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
-  - [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
+  - [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
+  - [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
 
 **Según condiciones (◐)**
 
@@ -394,6 +431,10 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
 - [SEO-09](05-seo.md#34-seo-09-datos-estructurados): Datos estructurados
 - [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región
 - [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado
+- [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones
+- [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens
+- [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso
+- [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión
 
 ### 4.5 Servicios para menores (`MEN`)
 
@@ -420,15 +461,16 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
   - [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Revisar Core Web Vitals
   - [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): Comprimir imágenes y usar formatos modernos
   - [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión): Caché HTTP, CDN y compresión
-  - [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
-  - [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
-  - [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
-  - [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
-  - [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
-  - [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
+  - [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad
+  - [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor
+  - [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades
+  - [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada
+  - [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios
+  - [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas
 - **Prioridad Media**
   - [PRIV-09](02-privacidad-cookies-y-comunicaciones.md#34-priv-09-cargar-las-fuentes-de-google-desde-tu-propio-servidor): Cargar las fuentes de Google desde tu propio servidor
   - [PRIV-13](02-privacidad-cookies-y-comunicaciones.md#41-priv-13-no-pedir-la-edad-a-los-usuarios): No pedir la edad a los usuarios
+  - [SEO-12](05-seo.md#41-seo-12-favicon): Favicon
   - [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros
 
 **Según condiciones (◐)**
@@ -458,10 +500,17 @@ Para cada sector, las medidas que aplican (●) agrupadas por prioridad y las qu
 - [SEO-09](05-seo.md#34-seo-09-datos-estructurados): Datos estructurados
 - [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región
 - [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información
+- [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir
 - [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales
 - [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado
-- [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
-- [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
+- [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos
+- [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1
+- [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones
+- [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens
+- [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso
+- [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión
+- [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros
+- [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido
 
 ## 5. Vista por región
 

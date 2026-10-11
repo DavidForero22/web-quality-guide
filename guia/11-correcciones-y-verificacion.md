@@ -11,7 +11,8 @@ Resultado de contrastar las listas originales (generadas con Perplexity) con fue
 - [2. Correcciones a las listas originales](#2-correcciones-a-las-listas-originales)
 - [3. Medidas duplicadas fusionadas](#3-medidas-duplicadas-fusionadas)
 - [4. Incorporación de las lagunas propuestas](#4-incorporación-de-las-lagunas-propuestas)
-- [5. Cambios normativos a vigilar](#5-cambios-normativos-a-vigilar)
+- [5. Incorporación del listado de buenas prácticas de diseño y rendimiento](#5-incorporación-del-listado-de-buenas-prácticas-de-diseño-y-rendimiento)
+- [6. Cambios normativos a vigilar](#6-cambios-normativos-a-vigilar)
 <!-- /INDICE -->
 
 ## 1. Método y alcance de la verificación
@@ -82,8 +83,8 @@ Las listas originales incluían una sección de «posibles lagunas» sin desarro
 | Derechos de imagen | [PI-04](04-propiedad-intelectual-y-contenido.md#22-pi-04-derechos-de-imagen-de-las-personas) |
 | Canónicas, redirecciones, móvil, datos estructurados, hreflang y enlazado interno | [SEO-06](05-seo.md#31-seo-06-canónicas-y-contenido-duplicado), [SEO-07](05-seo.md#32-seo-07-redirecciones-301-y-páginas-404), [SEO-08](05-seo.md#33-seo-08-compatibilidad-móvil-e-indexación-centrada-en-móviles), [SEO-09](05-seo.md#34-seo-09-datos-estructurados), [SEO-10](05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región), [SEO-11](05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información) |
 | Caché y compresión, fuentes y JS de terceros, presupuesto, vídeo e incrustados | [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión), [REN-05](06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros), [REN-06](06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales), [REN-07](06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado) |
-| HTTPS y cabeceras, secretos y MFA, actualizaciones, copias, disponibilidad y registros | [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad), [SEG-02](07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor), [SEG-03](07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades), [SEG-04](07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada), [SEG-05](07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros) |
-| Enlaces rotos y calidad del contenido | [POST-03](08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido) |
+| HTTPS y cabeceras, secretos y MFA, actualizaciones, copias, disponibilidad y registros | [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad), [SEG-02](08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor), [SEG-03](08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades), [SEG-04](08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada), [SEG-05](08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros) |
+| Enlaces rotos y calidad del contenido | [POST-03](09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido) |
 
 **Integradas en una ficha existente**
 
@@ -114,7 +115,51 @@ Las listas originales incluían una sección de «posibles lagunas» sin desarro
 - La Guía de cookies de la AEPD se actualizó en 2024 para incorporar los criterios del CEPD sobre «consentir o pagar»; admite el muro de cookies con alternativa equivalente, no necesariamente gratuita.
 - En `hreflang`, `UK` es un código de región reservado que Google ignora: usa `en-GB`.
 
-## 5. Cambios normativos a vigilar
+## 5. Incorporación del listado de buenas prácticas de diseño y rendimiento
+
+Un tercer listado de Perplexity proponía 16 prácticas. Se contrastaron con fuentes primarias y se clasificaron así:
+
+**Añadidas como medida nueva**
+
+| Práctica | Ficha |
+|---|---|
+| Índices en la base de datos | [REN-08](06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos) |
+| Consultas N+1 | [REN-09](06-rendimiento.md#42-ren-09-evitar-consultas-n1) |
+| Favicon | [SEO-12](05-seo.md#41-seo-12-favicon) |
+| Open Graph image | [SEO-13](05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir) |
+| «Violar la ley de Hick» y CTA above the fold (fusionadas) | [UX-01](07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones) |
+| Design tokens | [UX-02](07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens) |
+| Skeletons en carga | [UX-03](07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso) |
+| Thank you page | [UX-04](07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión) |
+
+**Integradas en una ficha existente**
+
+| Práctica | Dónde |
+|---|---|
+| Form error states | [WCAG 3.3.1](01-accesibilidad.md#48-wcag-331-identificación-de-errores-a) (patrón de validación y resumen de errores) |
+| Dirección de contacto real | [COM-01](03-consumo-y-comercio.md#11-com-01-datos-del-negocio-en-la-web) (más allá del mínimo legal) |
+| WebP o AVIF | [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos) (cuándo elegir cada uno) |
+
+**Descartadas por duplicadas**
+
+| Práctica | Ya cubierta en |
+|---|---|
+| No seguir estándares de accesibilidad | Todo el archivo [Accesibilidad](01-accesibilidad.md) |
+| No comprimir assets | [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos) y [REN-04](06-rendimiento.md#31-ren-04-caché-http-cdn-y-compresión) |
+| Crear página 404 | [SEO-07](05-seo.md#32-seo-07-redirecciones-301-y-páginas-404) |
+| Meta title por página | [SEO-05](05-seo.md#21-seo-05-títulos-y-descripciones-personalizados) |
+| Meta description por página | [SEO-05](05-seo.md#21-seo-05-títulos-y-descripciones-personalizados) |
+
+**Precisiones del contraste**
+
+- El listado citaba documentación de PostgreSQL 7.2 (obsoleta); se sustituyó por la actual.
+- Los argumentos sobre *above the fold* se apoyaban en blogs; se sustituyeron por el estudio de seguimiento ocular de NN/g (2018): alrededor del 57 % del tiempo de visualización cae sobre el pliegue y el 74 % en las dos primeras pantallas.
+- Sobre skeletons, NN/g los presenta como una herramienta complementaria y marca umbrales de uso; no se pudo confirmar en la página el resultado del estudio citado por el listado según el cual se perciben a veces como más lentos.
+- Sobre favicon, Google exige 8 × 8 px como mínimo y recomienda más de 48 × 48 px; el listado hablaba solo de 16 a 32 px como tamaño de diseño.
+- Open Graph: Meta recomienda 1200 × 630 px y fija 600 × 315 px como mínimo para la vista previa grande; 1200 × 630 no es un requisito.
+- El artículo de NN/g sobre la ley de Hick no estaba disponible; la ficha se apoya en una fuente secundaria y lo marca.
+
+## 6. Cambios normativos a vigilar
 
 Estado a **2026-10-10**. Varias normas están por cambiar o acaban de entrar en vigor; revisa su estado antes de decidir y actualiza las fichas afectadas.
 

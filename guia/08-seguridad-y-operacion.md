@@ -130,7 +130,7 @@ Medidas técnicas que mantienen el sitio seguro y disponible. Muchas deben exist
 - Monitorizar la disponibilidad desde fuera (comprobaciones periódicas de las páginas y flujos críticos) y recibir alertas en un canal que alguien lea.
 - Registrar errores de servidor y de cliente, y revisarlos tras cada despliegue.
 - **Minimizar los registros:** no guardar contraseñas, tokens, datos de pago ni campos de formulario completos; limitar las direcciones IP y otros identificadores a lo necesario; fijar plazos de conservación y restringir quién accede.
-- Para CSP, el modo solo informe permite observar infracciones antes de aplicar la política ([SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad)).
+- Para CSP, el modo solo informe permite observar infracciones antes de aplicar la política ([SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad)).
 - Los registros son también la base para detectar y documentar brechas ([PRIV-18](02-privacidad-cookies-y-comunicaciones.md#62-priv-18-brechas-de-seguridad-e-incidentes)).
 
 **Fuentes:** [OWASP: Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)

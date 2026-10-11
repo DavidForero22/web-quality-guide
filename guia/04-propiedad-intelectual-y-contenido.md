@@ -62,7 +62,7 @@ Derechos sobre las fuentes, imágenes y otros recursos que usas, y responsabilid
 **Qué hacer**
 
 - Publicar un procedimiento de notificación accesible y un contacto específico.
-- EE. UU.: registrar el agente en el directorio de la Copyright Office y mostrar sus datos en la web; anotar la fecha de renovación (ver [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+- EE. UU.: registrar el agente en el directorio de la Copyright Office y mostrar sus datos en la web; anotar la fecha de renovación (ver [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
 - UE: los servicios de alojamiento deben tener un mecanismo de notificación y acción fácil de usar, y motivar sus decisiones (arts. 16 y 17 DSA). Las microempresas y pequeñas empresas que sean plataformas en línea están exentas de las obligaciones adicionales de plataforma (sección 3), **no** del mecanismo de notificación.
 - España: responsabilidad del prestador de alojamiento limitada al conocimiento efectivo y actuación diligente (art. 16 LSSI, ahora coordinada con el DSA).
 - Reino Unido: servicios con contenido de usuarios pueden estar sujetos a la *Online Safety Act* (Ofcom).

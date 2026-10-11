@@ -17,6 +17,9 @@ Velocidad de carga, respuesta y estabilidad visual. Es buena práctica de experi
   - [3.2 REN-05: Fuentes web y JavaScript de terceros](#32-ren-05-fuentes-web-y-javascript-de-terceros)
   - [3.3 REN-06: Presupuesto de rendimiento y monitorización con datos reales](#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales)
   - [3.4 REN-07: Vídeo y contenido incrustado](#34-ren-07-vídeo-y-contenido-incrustado)
+- [4. Base de datos](#4-base-de-datos)
+  - [4.1 REN-08: Índices en la base de datos](#41-ren-08-índices-en-la-base-de-datos)
+  - [4.2 REN-09: Evitar consultas N+1](#42-ren-09-evitar-consultas-n1)
 <!-- /INDICE -->
 
 ## 1. Medición
@@ -37,7 +40,7 @@ Velocidad de carga, respuesta y estabilidad visual. Es buena práctica de experi
 - Medir móvil y escritorio por separado, y las plantillas clave (portada, listado, ficha, carrito, artículo), no solo la portada.
 - Esperar variabilidad entre ejecuciones de laboratorio: es normal.
 - **No perseguir una puntuación perfecta** a costa de la experiencia o de funcionalidad: la nota de 0 a 100 es un indicador, no el objetivo.
-- Repetir tras cada cambio relevante y de forma periódica ([POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+- Repetir tras cada cambio relevante y de forma periódica ([POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
 
 **Matiz.** Si la URL no tiene suficientes datos de campo, PSI recurre a datos del origen o no muestra datos reales; en sitios nuevos o con poco tráfico, vale más el laboratorio.
 
@@ -91,7 +94,7 @@ Velocidad de carga, respuesta y estabilidad visual. Es buena práctica de experi
 **Qué hacer**
 
 - Servir imágenes **responsivas** con `srcset` y `sizes`, para no enviar a un móvil la imagen de escritorio.
-- Considerar formatos modernos (**WebP**, **AVIF**) con `<picture>` y un respaldo en JPEG/PNG según tu público y flujo técnico.
+- Considerar formatos modernos con `<picture>` y un respaldo en JPEG/PNG según tu público y flujo técnico: **WebP** como valor por defecto (buena compresión y soporte); **AVIF** para imágenes de mucho valor o tráfico (héroes, producto), con mejor compresión pero herramientas más recientes, mayor coste de codificación y soporte de Safari desde 2022.
 - Indicar `width` y `height` para evitar saltos de diseño ([REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals)).
 - Carga diferida (`loading="lazy"`) para imágenes fuera de pantalla; **no** para la imagen principal (LCP).
 - Mantener un `alt` útil en cada imagen ([WCAG 1.1.1](01-accesibilidad.md#21-wcag-111-contenido-no-textual-a)).
@@ -184,3 +187,56 @@ Velocidad de carga, respuesta y estabilidad visual. Es buena práctica de experi
 - Subtítulos y alternativas de texto ([WCAG 1.2.2](01-accesibilidad.md#23-wcag-122-subtítulos-pregrabado-a)).
 
 **Fuentes:** [web.dev: carga diferida de vídeo](https://web.dev/articles/lazy-loading-video)
+
+## 4. Base de datos
+
+### 4.1 REN-08: Índices en la base de datos
+
+- **Prioridad:** Alta (si hay base de datos con consultas frecuentes)
+- **Naturaleza:** Buena práctica
+- **Sectores:** INF ◐ · TIE ● · SUS ● · UGC ● · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ● · UK ● · LATAM ●
+- **Verificación:** ✅ Correcta
+
+**De qué trata.** Sin un índice, la base de datos recorre la tabla entera para encontrar las filas; con él, localiza las coincidencias en unos pocos pasos. Es una de las mejoras de rendimiento de servidor con mejor relación esfuerzo-resultado. «Usar índices» no es «indexar todo».
+
+**Qué hacer**
+
+- Indexar las columnas que se usan en **`WHERE`**, **`JOIN`** (claves foráneas) y **`ORDER BY`**: estados, fechas, identificadores de búsqueda frecuente y combinaciones habituales.
+- En índices **compuestos**, el orden importa: un índice en `(a, b, c)` sirve para buscar por `a`, por `a, b` y por `a, b, c`, pero no por `b` o `c` solos.
+- Recordar el **coste**: cada índice ocupa espacio y encarece `INSERT`, `UPDATE` y `DELETE`. Mantén un conjunto pequeño que sirva a muchas consultas y **elimina** los que no se usan.
+- **Comprobar** que se usan con `EXPLAIN` (y `ANALYZE` en PostgreSQL para mantener las estadísticas); el planificador solo usa un índice si cree que es más eficiente que recorrer la tabla.
+- En producción con tablas grandes, crear índices sin bloquear escrituras (`CREATE INDEX CONCURRENTLY` en PostgreSQL).
+- En uniones, que las columnas tengan el mismo tipo y juego de caracteres; si no, el índice puede no usarse.
+- En tablas pequeñas o consultas que leen casi todas las filas, el recorrido completo suele ser más rápido.
+
+**Fuentes**
+
+- [PostgreSQL: introducción a los índices](https://www.postgresql.org/docs/current/indexes-intro.html)
+- [MySQL: cómo usa MySQL los índices](https://dev.mysql.com/doc/refman/8.4/en/mysql-indexes.html)
+
+### 4.2 REN-09: Evitar consultas N+1
+
+- **Prioridad:** Alta (si hay listados con relaciones)
+- **Naturaleza:** Buena práctica
+- **Sectores:** INF ◐ · TIE ● · SUS ● · UGC ● · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ● · UK ● · LATAM ●
+- **Verificación:** ✅ Correcta
+
+**De qué trata.** El patrón N+1 ocurre al consultar una lista y luego hacer una consulta adicional por cada elemento para obtener una relación: cargar 10 libros y el autor de cada uno ejecuta 1 + 10 = 11 consultas. Multiplica la latencia y la carga del servidor.
+
+**Qué hacer**
+
+- Usar **carga anticipada** (*eager loading*) o consultas agrupadas según el ORM:
+  - **Django:** `select_related()` (una consulta con `JOIN`, para relaciones de un solo valor) y `prefetch_related()` (una consulta por relación, para varios valores).
+  - **Rails:** `includes` (elige entre `preload` y `eager_load`), `preload` (una consulta por asociación) y `eager_load` (un `LEFT OUTER JOIN`).
+  - Otros ORM tienen equivalentes; en SQL manual, un `JOIN` o un `IN` con los identificadores.
+- **Detectarlo** en desarrollo con el registro de consultas y los contadores de consultas en pruebas; vigilar listados, APIs y exportaciones.
+- **Medir antes y después:** un `JOIN` grande o un `IN` con muchos valores también tiene coste. No optimices a ciegas.
+- Paginar los listados y cargar solo las columnas necesarias.
+- Cuidado con filtrar sobre una relación precargada: algunos ORM ignoran la carga anticipada y lanzan una consulta nueva.
+
+**Fuentes**
+
+- [Django: QuerySet (`select_related` y `prefetch_related`)](https://docs.djangoproject.com/en/stable/ref/models/querysets/)
+- [Rails: Active Record Query Interface (eager loading)](https://guides.rubyonrails.org/active_record_querying.html)

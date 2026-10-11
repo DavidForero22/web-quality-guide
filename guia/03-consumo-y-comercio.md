@@ -46,6 +46,8 @@ Transparencia hacia el consumidor, contratación online, suscripciones, devoluci
 
 **Ámbito.** La LSSI abarca servicios «no remunerados por sus destinatarios, en la medida en que constituyan una actividad económica para el prestador». Un sitio que obtiene un beneficio **indirecto** (publicidad, afiliación, captación de clientes) puede estar dentro, no solo las tiendas con pago online.
 
+**Más allá del mínimo legal.** Un canal de contacto real, atendido y con responsable aumenta la confianza y facilita el soporte y las reclamaciones. Si tu actividad entra en el art. 10 LSSI, el domicilio y el correo son obligatorios; fuera de ese ámbito no necesitas exponer una dirección física si hay razones legítimas de privacidad, pero sí ofrecer un canal real. No uses un formulario como único canal si el servicio implica pagos, contratos o reclamaciones: indica quién responde, por qué canal y en qué plazo, y mantén la ayuda en la misma posición relativa en todas las páginas ([WCAG 3.2.6](01-accesibilidad.md#47-wcag-326-ayuda-coherente-a)).
+
 **Por región.** Reino Unido: reglas equivalentes de identificación del prestador (Electronic Commerce Regulations 2002 y legislación societaria). Brasil: el Decreto 7.962/2013 exige información del proveedor en comercio electrónico. EE. UU.: no existe una norma federal equivalente; en la práctica se publica por transparencia y por los términos de plataformas.
 
 **Fuentes:** [LSSI-CE art. 10 y anexo (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758)

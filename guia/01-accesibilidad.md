@@ -447,6 +447,10 @@ Los mecanismos de ayuda (datos de contacto, formulario, chat, enlace a FAQ) debe
 
 Si se detecta un error de entrada, identifica el campo afectado y descríbelo con texto (no solo con color). Asocia el mensaje al campo con `aria-describedby` y mueve el foco o anúncialo.
 
+*Patrón recomendado (W3C y NN/g).* Mensaje **junto al campo** que nombra el problema y dice cómo corregirlo; en formularios largos, un **resumen de errores** al inicio con un enlace a cada campo (con `role="alert"` si la página no se recarga); **foco** al primer campo con error; no depender solo del color (añade icono y texto). **Valida cuando el usuario sale del campo**, no mientras escribe, y comunica las restricciones (formato, longitud) *antes*. Reserva el estilo de error (rojo, advertencia) para errores reales y conserva lo que la persona ya escribió.
+
+*Fusiona* el punto «Form error states» de un listado posterior.
+
 ### 4.9 WCAG 3.3.2: Etiquetas o instrucciones (A)
 
 - **Nivel:** A · **Prioridad:** Alta · **Aplica si:** hay formularios.
@@ -527,5 +531,5 @@ Anuncia los cambios de estado mediante regiones vivas (`role="status"`, `aria-li
 - **Manual con teclado:** recorre todo el sitio con `Tab` y comprueba foco visible, orden, trampas y atajos.
 - **Lector de pantalla** (NVDA, VoiceOver) y **zoom al 200 %/400 %** en las plantillas clave.
 - **Pruebas con personas usuarias de tecnologías de apoyo** (lector de pantalla, ampliadores, control por voz, teclados alternativos): no son una obligación legal específica, pero son la forma más eficaz de encontrar los problemas que las pruebas automáticas no detectan.
-- **Formularios y flujos críticos:** ver [POST-01](08-post-lanzamiento.md#11-post-01-testear-formularios).
+- **Formularios y flujos críticos:** ver [POST-01](09-post-lanzamiento.md#11-post-01-testear-formularios).
 - **Nivel AAA:** no es el mínimo legal. Algunos criterios, como 2.4.13 *Apariencia del foco* (AAA, con requisitos de tamaño y contraste del indicador), son una mejora razonable si el diseño lo permite.

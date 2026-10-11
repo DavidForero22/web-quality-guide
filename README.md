@@ -2,7 +2,7 @@
 
 Guía de buenas prácticas legales, de accesibilidad, SEO, rendimiento y mantenimiento para sitios y aplicaciones web. Cada medida indica su **prioridad**, el **sector** al que más afecta y la **región** donde la norma es más estricta.
 
-> Última verificación: **2026-10-10**. Es una guía técnica y de buenas prácticas, **no asesoramiento jurídico**. Revisa los casos concretos con un profesional y comprueba el estado de las normas que están cambiando ([lista de cambios pendientes](guia/10-correcciones-y-verificacion.md)).
+> Última verificación: **2026-10-10**. Es una guía técnica y de buenas prácticas, **no asesoramiento jurídico**. Revisa los casos concretos con un profesional y comprueba el estado de las normas que están cambiando ([lista de cambios pendientes](guia/11-correcciones-y-verificacion.md)).
 
 <!-- INDICE -->
 **Índice**
@@ -18,8 +18,9 @@ Guía de buenas prácticas legales, de accesibilidad, SEO, rendimiento y manteni
   - [5.4 Propiedad intelectual y contenido](#54-propiedad-intelectual-y-contenido)
   - [5.5 SEO](#55-seo)
   - [5.6 Rendimiento](#56-rendimiento)
-  - [5.7 Seguridad y operación](#57-seguridad-y-operación)
-  - [5.8 Post-lanzamiento y mantenimiento](#58-post-lanzamiento-y-mantenimiento)
+  - [5.7 Diseño y experiencia de usuario](#57-diseño-y-experiencia-de-usuario)
+  - [5.8 Seguridad y operación](#58-seguridad-y-operación)
+  - [5.9 Post-lanzamiento y mantenimiento](#59-post-lanzamiento-y-mantenimiento)
 - [6. Mantenimiento](#6-mantenimiento)
 <!-- /INDICE -->
 
@@ -41,10 +42,11 @@ La base jurídica es la **UE y España**. Se señalan las diferencias con **EE. 
 | [guia/04-propiedad-intelectual-y-contenido.md](guia/04-propiedad-intelectual-y-contenido.md) | Licencias y contenido de usuarios |
 | [guia/05-seo.md](guia/05-seo.md) | Indexación, sitemap, robots.txt, títulos y descripciones |
 | [guia/06-rendimiento.md](guia/06-rendimiento.md) | PageSpeed Insights, Core Web Vitals e imágenes |
-| [guia/07-seguridad-y-operacion.md](guia/07-seguridad-y-operacion.md) | HTTPS, cabeceras, accesos, actualizaciones, copias y monitorización |
-| [guia/08-post-lanzamiento.md](guia/08-post-lanzamiento.md) | Pruebas tras publicar y calendario de revisiones |
-| [guia/09-matriz.md](guia/09-matriz.md) | Vista transversal: prioridad, sector y región (generada) |
-| [guia/10-correcciones-y-verificacion.md](guia/10-correcciones-y-verificacion.md) | Qué se corrigió, qué se fusionó y qué normas están cambiando |
+| [guia/07-diseno-y-experiencia-de-usuario.md](guia/07-diseno-y-experiencia-de-usuario.md) | Acción principal, design tokens, estados de carga y páginas de confirmación |
+| [guia/08-seguridad-y-operacion.md](guia/08-seguridad-y-operacion.md) | HTTPS, cabeceras, accesos, actualizaciones, copias y monitorización |
+| [guia/09-post-lanzamiento.md](guia/09-post-lanzamiento.md) | Pruebas tras publicar y calendario de revisiones |
+| [guia/10-matriz.md](guia/10-matriz.md) | Vista transversal: prioridad, sector y región (generada) |
+| [guia/11-correcciones-y-verificacion.md](guia/11-correcciones-y-verificacion.md) | Qué se corrigió, qué se fusionó y qué normas están cambiando |
 
 ## 3. Cómo leer las fichas
 
@@ -66,15 +68,15 @@ Cada medida tiene una ficha con estos campos:
 | ◐ | Aplica según condiciones | Aplica con matices, por otra norma o solo en parte |
 | ○ | No suele aplicar | Sin equivalente relevante |
 
-Las medidas que no son legales (SEO, rendimiento) llevan ● en todas las regiones: son universales.
+Las medidas que no son legales (SEO, rendimiento, diseño y seguridad técnica) llevan ● en todas las regiones: son universales.
 
 ## 4. Cómo usar la guía en tu proyecto
 
 1. **Identifica tu sector** (puedes ser varios: una tienda con blog es `TIE` + `INF`).
 2. **Identifica tus regiones**: dónde estás, dónde están tus usuarios y a quién vendes. Empieza por [PRIV-01](guia/02-privacidad-cookies-y-comunicaciones.md#11-priv-01-determinar-qué-jurisdicciones-te-aplican).
-3. **Abre la [matriz](guia/09-matriz.md)** y trabaja primero las medidas con prioridad Alta marcadas con ● en tu sector y tu región.
+3. **Abre la [matriz](guia/10-matriz.md)** y trabaja primero las medidas con prioridad Alta marcadas con ● en tu sector y tu región.
 4. **Añade las condicionales (◐)** que te apliquen y revisa las medidas opcionales si adoptas esa herramienta.
-5. **Programa las revisiones** con el [calendario de post-lanzamiento](guia/08-post-lanzamiento.md).
+5. **Programa las revisiones** con el [calendario de post-lanzamiento](guia/09-post-lanzamiento.md).
 
 ## 5. Índice de medidas
 
@@ -208,7 +210,7 @@ Archivo: [guia/04-propiedad-intelectual-y-contenido.md](guia/04-propiedad-intele
 
 ### 5.5 SEO
 
-Archivo: [guia/05-seo.md](guia/05-seo.md) · 11 medidas
+Archivo: [guia/05-seo.md](guia/05-seo.md) · 13 medidas
 
 - **Presencia e indexación**
   - [SEO-01](guia/05-seo.md#11-seo-01-registrar-la-web-en-search-console): Registrar la web en Search Console — *Alta · Buena práctica*
@@ -224,10 +226,13 @@ Archivo: [guia/05-seo.md](guia/05-seo.md) · 11 medidas
   - [SEO-09](guia/05-seo.md#34-seo-09-datos-estructurados): Datos estructurados — *Media · Buena práctica*
   - [SEO-10](guia/05-seo.md#35-seo-10-hreflang-para-versiones-por-idioma-o-región): hreflang para versiones por idioma o región — *Media · Buena práctica*
   - [SEO-11](guia/05-seo.md#36-seo-11-enlazado-interno-y-arquitectura-de-la-información): Enlazado interno y arquitectura de la información — *Media · Buena práctica*
+- **Identidad y vista previa**
+  - [SEO-12](guia/05-seo.md#41-seo-12-favicon): Favicon — *Media · Buena práctica*
+  - [SEO-13](guia/05-seo.md#42-seo-13-open-graph-y-vista-previa-al-compartir): Open Graph y vista previa al compartir — *Media · Buena práctica*
 
 ### 5.6 Rendimiento
 
-Archivo: [guia/06-rendimiento.md](guia/06-rendimiento.md) · 7 medidas
+Archivo: [guia/06-rendimiento.md](guia/06-rendimiento.md) · 9 medidas
 
 - **Medición**
   - [REN-01](guia/06-rendimiento.md#11-ren-01-medir-con-pagespeed-insights): Medir con PageSpeed Insights — *Alta · Buena práctica*
@@ -239,28 +244,42 @@ Archivo: [guia/06-rendimiento.md](guia/06-rendimiento.md) · 7 medidas
   - [REN-05](guia/06-rendimiento.md#32-ren-05-fuentes-web-y-javascript-de-terceros): Fuentes web y JavaScript de terceros — *Media · Buena práctica*
   - [REN-06](guia/06-rendimiento.md#33-ren-06-presupuesto-de-rendimiento-y-monitorización-con-datos-reales): Presupuesto de rendimiento y monitorización con datos reales — *Media · Buena práctica*
   - [REN-07](guia/06-rendimiento.md#34-ren-07-vídeo-y-contenido-incrustado): Vídeo y contenido incrustado — *Media · Buena práctica*
+- **Base de datos**
+  - [REN-08](guia/06-rendimiento.md#41-ren-08-índices-en-la-base-de-datos): Índices en la base de datos — *Alta · Buena práctica*
+  - [REN-09](guia/06-rendimiento.md#42-ren-09-evitar-consultas-n1): Evitar consultas N+1 — *Alta · Buena práctica*
 
-### 5.7 Seguridad y operación
+### 5.7 Diseño y experiencia de usuario
 
-Archivo: [guia/07-seguridad-y-operacion.md](guia/07-seguridad-y-operacion.md) · 5 medidas
+Archivo: [guia/07-diseno-y-experiencia-de-usuario.md](guia/07-diseno-y-experiencia-de-usuario.md) · 4 medidas
+
+- **Claridad y consistencia**
+  - [UX-01](guia/07-diseno-y-experiencia-de-usuario.md#11-ux-01-acción-principal-clara-y-reducción-de-opciones): Acción principal clara y reducción de opciones — *Media · Buena práctica*
+  - [UX-02](guia/07-diseno-y-experiencia-de-usuario.md#12-ux-02-design-tokens): Design tokens — *Media · Buena práctica*
+- **Estados y conversión**
+  - [UX-03](guia/07-diseno-y-experiencia-de-usuario.md#21-ux-03-estados-de-carga-skeletons-spinners-y-barras-de-progreso): Estados de carga: skeletons, spinners y barras de progreso — *Baja · Buena práctica*
+  - [UX-04](guia/07-diseno-y-experiencia-de-usuario.md#22-ux-04-página-de-confirmación-tras-una-conversión): Página de confirmación tras una conversión — *Media · Buena práctica*
+
+### 5.8 Seguridad y operación
+
+Archivo: [guia/08-seguridad-y-operacion.md](guia/08-seguridad-y-operacion.md) · 5 medidas
 
 - **Protección del sitio**
-  - [SEG-01](guia/07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad — *Alta · Obligación legal condicionada*
-  - [SEG-02](guia/07-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor — *Alta · Buena práctica*
-  - [SEG-03](guia/07-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades — *Alta · Buena práctica*
+  - [SEG-01](guia/08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS y cabeceras de seguridad — *Alta · Obligación legal condicionada*
+  - [SEG-02](guia/08-seguridad-y-operacion.md#12-seg-02-secretos-accesos-y-autenticación-multifactor): Secretos, accesos y autenticación multifactor — *Alta · Buena práctica*
+  - [SEG-03](guia/08-seguridad-y-operacion.md#13-seg-03-actualizaciones-y-análisis-de-vulnerabilidades): Actualizaciones y análisis de vulnerabilidades — *Alta · Buena práctica*
 - **Continuidad y observabilidad**
-  - [SEG-04](guia/07-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada — *Alta · Buena práctica*
-  - [SEG-05](guia/07-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros — *Media · Buena práctica*
+  - [SEG-04](guia/08-seguridad-y-operacion.md#21-seg-04-copias-de-seguridad-y-restauración-probada): Copias de seguridad y restauración probada — *Alta · Buena práctica*
+  - [SEG-05](guia/08-seguridad-y-operacion.md#22-seg-05-disponibilidad-errores-y-registros): Disponibilidad, errores y registros — *Media · Buena práctica*
 
-### 5.8 Post-lanzamiento y mantenimiento
+### 5.9 Post-lanzamiento y mantenimiento
 
-Archivo: [guia/08-post-lanzamiento.md](guia/08-post-lanzamiento.md) · 3 medidas
+Archivo: [guia/09-post-lanzamiento.md](guia/09-post-lanzamiento.md) · 3 medidas
 
 - **Verificación tras la publicación**
-  - [POST-01](guia/08-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios — *Alta · Buena práctica*
+  - [POST-01](guia/09-post-lanzamiento.md#11-post-01-testear-formularios): Testear formularios — *Alta · Buena práctica*
 - **Mantenimiento recurrente**
-  - [POST-02](guia/08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas — *Alta · Buena práctica*
-  - [POST-03](guia/08-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido — *Media · Buena práctica*
+  - [POST-02](guia/09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): Plan de revisiones periódicas — *Alta · Buena práctica*
+  - [POST-03](guia/09-post-lanzamiento.md#22-post-03-revisión-de-enlaces-rotos-y-calidad-del-contenido): Revisión de enlaces rotos y calidad del contenido — *Media · Buena práctica*
 <!-- /MEDIDAS -->
 
 ## 6. Mantenimiento

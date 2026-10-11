@@ -21,7 +21,10 @@ Visibilidad en buscadores. Las medidas se basan en la documentación de **Google
   - [3.4 SEO-09: Datos estructurados](#34-seo-09-datos-estructurados)
   - [3.5 SEO-10: hreflang para versiones por idioma o región](#35-seo-10-hreflang-para-versiones-por-idioma-o-región)
   - [3.6 SEO-11: Enlazado interno y arquitectura de la información](#36-seo-11-enlazado-interno-y-arquitectura-de-la-información)
-- [4. Medidas relacionadas en otras categorías](#4-medidas-relacionadas-en-otras-categorías)
+- [4. Identidad y vista previa](#4-identidad-y-vista-previa)
+  - [4.1 SEO-12: Favicon](#41-seo-12-favicon)
+  - [4.2 SEO-13: Open Graph y vista previa al compartir](#42-seo-13-open-graph-y-vista-previa-al-compartir)
+- [5. Medidas relacionadas en otras categorías](#5-medidas-relacionadas-en-otras-categorías)
 <!-- /INDICE -->
 
 ## 1. Presencia e indexación
@@ -40,7 +43,7 @@ Visibilidad en buscadores. Las medidas se basan en la documentación de **Google
 
 - Verificar la propiedad como **dominio** (DNS) para cubrir todos los subdominios y protocolos.
 - Añadir al menos otro usuario con acceso para no depender de una sola persona.
-- Revisar con regularidad los informes de indexación, experiencia de página y problemas de seguridad (ver [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+- Revisar con regularidad los informes de indexación, experiencia de página y problemas de seguridad (ver [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
 - Si el sitio es una aplicación detrás de inicio de sesión, el valor se limita a la parte pública.
 
 **Fuentes:** [Ayuda de Search Console](https://support.google.com/webmasters/answer/9128668)
@@ -168,7 +171,7 @@ Visibilidad en buscadores. Las medidas se basan en la documentación de **Google
 - **Traslado temporal:** `302`/`307`, que mantienen la URL original en resultados.
 - No redirigir masivamente todo a la portada ni a una página no relacionada.
 - Contenido eliminado sin equivalente: devolver un `404` o `410` real. Evita los *soft 404* (un `200` con un mensaje de «no encontrado»).
-- Ofrecer una página 404 útil, con navegación y buscador.
+- Ofrecer una página 404 **útil**: mensaje claro y amable, el mismo diseño y navegación del sitio, enlaces a la portada y a contenido popular, buscador y una forma de informar de enlaces rotos. Y comprobar que devuelve **realmente** el código 404.
 - Tras una migración, comprobar en Search Console la cobertura y los errores ([SEO-01](05-seo.md#11-seo-01-registrar-la-web-en-search-console)).
 
 **Fuentes**
@@ -184,7 +187,7 @@ Visibilidad en buscadores. Las medidas se basan en la documentación de **Google
 - **Regiones:** UE/ES ● · EE. UU. ● · UK ● · LATAM ●
 - **Verificación:** ➕ Añadida
 
-**De qué trata.** Google usa la **versión móvil** del contenido para indexar y posicionar. HTTPS es la base de seguridad ([SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad)); la experiencia móvil debe formar parte de las pruebas.
+**De qué trata.** Google usa la **versión móvil** del contenido para indexar y posicionar. HTTPS es la base de seguridad ([SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad)); la experiencia móvil debe formar parte de las pruebas.
 
 **Qué hacer**
 
@@ -254,9 +257,61 @@ Visibilidad en buscadores. Las medidas se basan en la documentación de **Google
 
 **Fuentes:** [Google: hacer enlaces rastreables](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
 
-## 4. Medidas relacionadas en otras categorías
+## 4. Identidad y vista previa
+
+### 4.1 SEO-12: Favicon
+
+- **Prioridad:** Media
+- **Naturaleza:** Buena práctica
+- **Sectores:** INF ● · TIE ● · SUS ● · UGC ● · MEN ●
+- **Regiones:** UE/ES ● · EE. UU. ● · UK ● · LATAM ●
+- **Verificación:** ✅ Correcta
+
+**De qué trata.** El icono que aparece en pestañas, marcadores y resultados de búsqueda. Un set razonable es pequeño: no hace falta incluir todos los formatos y tamaños «por si acaso».
+
+**Qué hacer**
+
+- Declarar `<link rel="icon" href="...">` en el `<head>` de la página principal.
+- Que el archivo sea **cuadrado** (1:1). Google acepta formatos como ICO, PNG, GIF o JPEG, exige al menos 8 × 8 px y **recomienda más de 48 × 48 px** para que se vea bien en los resultados.
+- Un favicon **por host**: no se admite uno distinto para un subdirectorio. Mantén la URL estable y que represente visualmente la marca.
+- **No bloquear** el archivo del favicon ni la portada en `robots.txt` ([SEO-04](05-seo.md#14-seo-04-generar-robotstxt)).
+- Para instalación como app, declarar en el manifiesto iconos de 192 y 512 px, y un `apple-touch-icon` si te interesa iOS.
+- Diseñarlo primero para 16 a 32 px; si el logotipo no se reconoce a ese tamaño, crear una variante simplificada.
+
+**Matiz.** Google no garantiza que el favicon se muestre aunque cumplas los requisitos, y puede tardar de días a semanas.
+
+**Fuentes**
+
+- [Google: favicon en los resultados de búsqueda](https://developers.google.com/search/docs/appearance/favicon-in-search)
+- [web.dev: añadir un manifiesto de aplicación web](https://web.dev/articles/add-manifest)
+
+### 4.2 SEO-13: Open Graph y vista previa al compartir
+
+- **Prioridad:** Media
+- **Naturaleza:** Buena práctica
+- **Sectores:** INF ● · TIE ● · SUS ◐ · UGC ● · MEN ◐
+- **Regiones:** UE/ES ● · EE. UU. ● · UK ● · LATAM ●
+- **Verificación:** ✅ Correcta
+
+**De qué trata.** Las etiquetas Open Graph controlan el título, la descripción y la imagen que muestran redes sociales y apps de mensajería al compartir un enlace. No es imprescindible en todas las páginas, pero es una buena inversión en artículos, productos, campañas y páginas de captación.
+
+**Qué hacer**
+
+- Incluir las cuatro propiedades básicas: `og:title`, `og:type`, `og:image` y `og:url` (URL canónica; ver [SEO-06](05-seo.md#31-seo-06-canónicas-y-contenido-duplicado)). Añadir `og:description`, `og:site_name` y `og:locale` (`es_ES`).
+- Usar **URL absolutas** y una imagen **por página** relevante: 1200 × 630 px (relación 1,91:1) es la referencia de Meta para la mejor visualización; por debajo de 600 × 315 px la vista previa es pequeña. Peso máximo de 8 MB.
+- Indicar `og:image:width` y `og:image:height` y un `og:image:alt` descriptivo.
+- Evitar imágenes genéricas reutilizadas, con demasiado texto o enormes que ralenticen la generación de la vista previa.
+- Las imágenes se **cachean por URL**: para actualizarla, usa una URL nueva y vuelve a procesar el enlace en el depurador de la plataforma.
+- Como complemento, etiquetas `twitter:card` para X.
+
+**Fuentes**
+
+- [Open Graph protocol](https://ogp.me/)
+- [Meta: imágenes en enlaces compartidos](https://developers.facebook.com/docs/sharing/webmasters/images)
+
+## 5. Medidas relacionadas en otras categorías
 
 - [REN-02](06-rendimiento.md#12-ren-02-revisar-core-web-vitals): Core Web Vitals (señal de experiencia que Google usa en sus sistemas de clasificación).
 - [REN-03](06-rendimiento.md#21-ren-03-comprimir-imágenes-y-usar-formatos-modernos): imágenes optimizadas.
-- [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): plan de revisiones periódicas (Search Console).
-- [SEG-01](07-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS, base de seguridad que Google también prefiere para la URL canónica.
+- [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas): plan de revisiones periódicas (Search Console).
+- [SEG-01](08-seguridad-y-operacion.md#11-seg-01-https-y-cabeceras-de-seguridad): HTTPS, base de seguridad que Google también prefiere para la URL canónica.

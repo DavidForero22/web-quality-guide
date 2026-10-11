@@ -250,7 +250,7 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 - Crear un inventario: servicio, finalidad, datos que envía, momento de activación, país de tratamiento, base jurídica, contrato.
 - Contrato de encargado del tratamiento cuando el proveedor trate datos por tu cuenta (art. 28 RGPD).
 - Para transferencias fuera del EEE, comprobar la salvaguarda (decisión de adecuación, cláusulas contractuales tipo). El *EU-US Data Privacy Framework* está vigente, con un recurso pendiente ante el Tribunal de Justicia (C-703/25 P).
-- Repetir el escaneo en cada versión y al añadir un tag nuevo (ver [POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+- Repetir el escaneo en cada versión y al añadir un tag nuevo (ver [POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
 
 **Fuentes**
 
@@ -502,7 +502,7 @@ Protección de datos personales, cookies y tecnologías de seguimiento, terceros
 - **Notificar a la autoridad** sin dilación indebida y, de ser posible, en un máximo de **72 horas** desde que tengas conocimiento, **salvo** que sea improbable que suponga un riesgo para las personas. No toda incidencia debe notificarse. En España, a través de la herramienta *Comunica-Brecha RGPD* de la AEPD.
 - **Comunicar a los afectados** cuando el riesgo sea **alto** (art. 34), con lenguaje claro y recomendaciones de protección.
 - Exigir en los contratos que tus proveedores te avisen sin demora (art. 33.2).
-- Ensayar el plan al menos una vez al año ([POST-02](08-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
+- Ensayar el plan al menos una vez al año ([POST-02](09-post-lanzamiento.md#21-post-02-plan-de-revisiones-periódicas)).
 
 **Por región.** EE. UU.: todos los estados tienen leyes de notificación de brechas, con definiciones y plazos distintos. Reino Unido: igual que la UE (UK GDPR). Brasil: la LGPD exige comunicar incidentes relevantes a la autoridad y a los titulares.
 

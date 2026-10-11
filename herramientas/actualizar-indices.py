@@ -10,9 +10,9 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 GUIA = RAIZ / "guia"
 README = RAIZ / "README.md"
-MATRIZ = GUIA / "09-matriz.md"
+MATRIZ = GUIA / "10-matriz.md"
 
-ID = r"(?:ACC|PRIV|COM|PI|SEO|REN|SEG|POST)-\d+|WCAG \d\.\d\.\d+"
+ID = r"(?:ACC|PRIV|COM|PI|SEO|REN|SEG|UX|POST)-\d+|WCAG \d\.\d\.\d+"
 SECTORES = [
     ("INF", "Informativo, educativo o blog"),
     ("TIE", "Tienda online"),
@@ -307,7 +307,7 @@ def generar_matriz(medidas, wcag):
     L.append("")
     L.append("Para cada región, dónde la regulación es más estricta (●), dónde aplica con matices (◐) y qué medidas legales son propias de otra región (○). Las medidas de SEO, rendimiento y post-lanzamiento son universales y no se repiten aquí.")
     L.append("")
-    legales = [m for m in otras if not m["id"].startswith(("SEO-", "REN-", "SEG-", "POST-"))]
+    legales = [m for m in otras if not m["id"].startswith(("SEO-", "REN-", "SEG-", "UX-", "POST-"))]
     for cod, nombre in REGIONES:
         L.append(f"### {nombre} (`{cod}`)")
         L.append("")
